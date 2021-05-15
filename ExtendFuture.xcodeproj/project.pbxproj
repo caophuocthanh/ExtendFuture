@@ -10,6 +10,7 @@
 		739FB907264FEA2400ED1F28 /* ExtendFuture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 739FB8FD264FEA2300ED1F28 /* ExtendFuture.framework */; };
 		739FB90C264FEA2400ED1F28 /* ExtendFutureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739FB90B264FEA2400ED1F28 /* ExtendFutureTests.swift */; };
 		739FB90E264FEA2400ED1F28 /* ExtendFuture.h in Headers */ = {isa = PBXBuildFile; fileRef = 739FB900264FEA2300ED1F28 /* ExtendFuture.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		739FB91A264FEA3700ED1F28 /* ExtendFuture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739FB919264FEA3700ED1F28 /* ExtendFuture.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		739FB906264FEA2400ED1F28 /* ExtendFutureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExtendFutureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		739FB90B264FEA2400ED1F28 /* ExtendFutureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtendFutureTests.swift; sourceTree = "<group>"; };
 		739FB90D264FEA2400ED1F28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		739FB919264FEA3700ED1F28 /* ExtendFuture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtendFuture.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				739FB900264FEA2300ED1F28 /* ExtendFuture.h */,
 				739FB901264FEA2300ED1F28 /* Info.plist */,
+				739FB919264FEA3700ED1F28 /* ExtendFuture.swift */,
 			);
 			path = ExtendFuture;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 				TargetAttributes = {
 					739FB8FC264FEA2300ED1F28 = {
 						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
 					};
 					739FB905264FEA2400ED1F28 = {
 						CreatedOnToolsVersion = 12.3;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				739FB91A264FEA3700ED1F28 /* ExtendFuture.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +345,7 @@
 		739FB912264FEA2400ED1F28 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -357,6 +363,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = caophuocthanh.ExtendFuture;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -364,6 +371,7 @@
 		739FB913264FEA2400ED1F28 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -388,6 +396,7 @@
 		739FB915264FEA2400ED1F28 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 8AYMHH2W3E;
@@ -406,6 +415,7 @@
 		739FB916264FEA2400ED1F28 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 8AYMHH2W3E;
