@@ -1,4 +1,4 @@
-# ExtendFuture
+# Combine - ExtendFuture
 
 
 ## How it work
