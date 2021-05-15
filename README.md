@@ -1,6 +1,9 @@
 # ExtendFuture
 
-### Create 2 Future function
+
+## How it work
+
+Create 2 Future function
 
 ```swift
 func plusInt(a: Int, b: Int) -> Future<Int, Never> {
@@ -17,7 +20,7 @@ func plusFloat(a: Int, b: Int) -> Future<Int, Never> {
 
 ```
 
-### How it work
+### 1. Wait
 
 ```swift
 // Future Await extension
@@ -28,6 +31,8 @@ print(a + b)
 
 ```
 Ouput: 17
+
+### 2. Then
 
 ```swift
 // Future Then extension
@@ -44,4 +49,10 @@ print(d)
 
 ```
 Ouput: 6
+
+
+## Contact
+- Email: caophuocthanh@gmail.com
+- Site: https://onebuffer.com
+- Linkedin: https://www.linkedin.com/in/caophuocthanh/
 
