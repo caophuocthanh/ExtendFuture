@@ -6,6 +6,9 @@
 Create 2 Future function
 
 ```swift
+
+import Combine
+
 func plusInt(a: Int, b: Int) -> Future<Int, Never> {
     return Future<Int, Never> { promise in
         promise(.success(a+b))
