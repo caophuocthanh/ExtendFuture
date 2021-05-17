@@ -17,8 +17,8 @@ class ExtendFutureTests: XCTestCase {
         }
     }
 
-    func plusFloat(a: Int, b: Int) -> Future<Int, Never> {
-        return Future<Int, Never> { promise in
+    func plusFloat(a: Float, b: Float) -> Future<Float, Never> {
+        return Future<Float, Never> { promise in
             promise(.success(a+b))
         }
     }
@@ -37,7 +37,7 @@ class ExtendFutureTests: XCTestCase {
         let a = try! plusInt(a: 4, b: 5).await()
         let b = try! plusFloat(a: 3, b: 5).await()
 
-        let c = a + b
+        let c = Float(a) + b
         
         XCTAssertEqual(a, 9, "wrong")
         XCTAssertEqual(b, 8, "wrong")
@@ -49,7 +49,7 @@ class ExtendFutureTests: XCTestCase {
         // Future Then extension
         let d = try! plusInt(a: 1, b: 1)
             .then {
-                self.plusFloat(a: $0, b: 3)
+                self.plusFloat(a: Float($0), b: 3)
             }
             .then {
                 self.plusFloat(a: $0, b: 1)
